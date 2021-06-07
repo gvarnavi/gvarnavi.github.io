@@ -53,13 +53,12 @@
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
   transition: 0.5s ease;
+  background-color: rgba(0,0,0,0.125);
 }
 
 .img-container:hover .img-overlay {
   opacity: 1;
-  background-color: rgba(0,0,0,0.5);
 }
 
 .img-text {
@@ -76,10 +75,15 @@
 
 
 @media only screen and (min-width: 920px) {
-    .grid-column {
-      flex: 50%;
-      max-width: 50%;
-    }
+  .grid-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .img-overlay { 
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
 }
 
 
